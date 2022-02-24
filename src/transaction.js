@@ -28,12 +28,12 @@ class Transaction {
     constructor(fromAddress = "", toAddress = "", amount = 0){
         this.fromAddress = generateRandomIPv4();
         this.toAddress = generateRandomIPv4();
-        this.amount - generateRandomMoney();
+        this.amount = generateRandomMoney();
     }
 
     //Return a pretty version of this transaction
     prettify(){
-        let txStr = '<div>Host <i>${this.fromAddress}</i> sent <i>${this.toAddress}</i> \SS{this.amount}.</div>';
+        let txStr = `<div>Host <i>${this.fromAddress}</i> sent mockcoin to <i>${this.toAddress}</i> \$${this.amount}.</div>`;
         return txStr;
     }
 }
