@@ -7,3 +7,5 @@ const app = express();//First call to express to initialize
 
 app.use(morgan("dev"));
 const port = 8080; //I hate UDP and TCP thanks to ee/cmpen 362
+
+require("./routes")(app);//Dynamically load all routes from the ./routes folder.
