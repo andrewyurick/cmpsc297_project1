@@ -2,6 +2,13 @@
 //First importing expresss and morgan
 const express = require("express");
 const morgan = require("morgan");
+const Blockchain = require("./src/blockchain");
+
+//Add global variables
+global.difficulty = 5;
+global.blockchain = new Blockchain();
+global.transactions = [];
+
 
 const app = express();//First call to express to initialize
 
