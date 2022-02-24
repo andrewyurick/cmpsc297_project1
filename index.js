@@ -1,8 +1,9 @@
 //This is my index.js File
 //First importing expresss and morgan
+const Blockchain = require("./src/blockchain");
 const express = require("express");
 const morgan = require("morgan");
-const Blockchain = require("./src/blockchain");
+//const Blockchain = require("./src/blockchain");
 
 //Add global variables
 global.difficulty = 5;
